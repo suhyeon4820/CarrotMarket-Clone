@@ -19,11 +19,11 @@ class LifeBarCoordinator: Coordinator {
     }
     
     func start() -> Observable<Void> {
-//        let lifeBarViewController: LifeBarViewController = .instantiate()
-//        let lifeBarViewModel = LifeBarViewModel()
-//        lifeBarViewModel.coordinator = self
-//        lifeBarViewController.viewModel = lifeBarViewModel
-//        navigationController.setViewControllers([lifeBarViewController], animated: false)
+        let lifeBarViewController: LifeBarViewController = .instantiate()
+        let lifeBarViewModel = LifeBarViewModel()
+        lifeBarViewModel.coordinator = self
+        lifeBarViewController.viewModel = lifeBarViewModel
+        navigationController.setViewControllers([lifeBarViewController], animated: false)
         return .never()
     }
     

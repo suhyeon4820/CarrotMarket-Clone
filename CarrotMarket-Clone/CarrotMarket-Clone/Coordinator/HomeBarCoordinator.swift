@@ -31,19 +31,3 @@ class HomeBarCoordinator: Coordinator {
 }
 
 
-
-//class HomeBarCoordinator: Coordinator {
-//
-//    var childCoordinators: [Coordinator] = []
-//    var navigationController: UINavigationController
-//
-//    init(navigationController: UINavigationController) {
-//        self.navigationController = navigationController
-//    }
-//
-//    func start() -> Observable<Void> {
-//        <#code#>
-//    }
-//
-//
-//}

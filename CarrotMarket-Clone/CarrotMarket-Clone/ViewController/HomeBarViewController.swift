@@ -6,25 +6,71 @@
 //
 
 import UIKit
+import Alamofire
+import RxSwift
+import RxCocoa
 
-class HomeBarViewController: UIViewController {
 
+class HomeBarViewController: UIViewController, Storyboarded {
+    
+    @IBOutlet weak var titleLabel: UILabel!
     var viewModel: HomeBarViewModel!
+    fileprivate let disposeBag = DisposeBag()
+    
+    var items: [Shopping] = []
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        tableView.dataSource = nil
+        fetchList()
     }
     
+    func fetchList() {
+        guard let url = Bundle.main.url(forResource: "Shopping", withExtension: "json") else { return }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//        AF.request(url)
+//            .responseDecodable(of: Shoppings.self) { [self] (response) in
+//                guard let shoppings = response.value else { return }
+//
+//                self.items = shoppings.all
+//
+//                print(shoppings.all[0].title)
+//                print(shoppings.all[1].title)
+//                print(shoppings.all[2].title)
+//            }
     }
-    */
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        itemTable()
+    }
+    
+    
+    func itemTable() {
+        //        let obs1 = Observable.just(items) // just , of 같게 나옴
+        //        let obs3 = Observable.from(items)
+        //        obs3.subscribe { event in
+        //            print(event)
+        //        }
+        
+//        Observable.from(items)
+//            .subscribe({item in
+//                print(item)
+//
+//            }).disposed(by: disposeBag)
+//
+//        Observable.from(items)
+//            .bind(to: tableView.rx.items(cellIdentifier: "cell")) { index, element, cell in
+//                cell.textLabel?.text = "\(element)"
+//            }.disposed(by: disposeBag)
+        
+//        let cities = ["London", "Vienna", "Lisbon"]
+//        let citiesOb: Observable<[String]> = Observable.of(cities)
+//        citiesOb.bind(to: tableView.rx.items(cellIdentifier: "cell")) { (index, element, cell) in
+//            cell.textLabel?.text = element
+//        }.disposed(by: disposeBag)
+        
+    }
 }

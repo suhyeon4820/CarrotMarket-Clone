@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyCarrotBarViewController: UIViewController {
+class MyCarrotBarViewController: UIViewController, Storyboarded {
 
     var viewModel: MyCarrotBarViewModel!
     

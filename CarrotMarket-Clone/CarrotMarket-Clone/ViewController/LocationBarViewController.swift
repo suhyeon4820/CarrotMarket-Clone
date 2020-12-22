@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LocationBarViewController: UIViewController {
+class LocationBarViewController: UIViewController, Storyboarded {
 
     var viewModel: LocationBarViewModel!
     

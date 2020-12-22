@@ -15,13 +15,98 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-tb-boH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="119" id="H7H-Yp-Hy1">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H7H-Yp-Hy1" id="Xne-06-QXH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dhk-tb-boH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ho-Kp-7dw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dhk-tb-boH" secondAttribute="bottom" id="879-xN-e3o"/>
+                            <constraint firstItem="Dhk-tb-boH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ssd-kX-mkE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dhk-tb-boH" secondAttribute="trailing" id="u0s-mI-Qa3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Dhk-tb-boH" id="L5z-O7-wyf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="76"/>
+            <point key="canvasLocation" x="-765.21739130434787" y="70.982142857142847"/>
+        </scene>
+        <!--Life Bar View Controller-->
+        <scene sceneID="vHD-OE-Ujp">
+            <objects>
+                <viewController storyboardIdentifier="LifeBarViewController" id="Fl5-X3-eyR" customClass="LifeBarViewController" customModule="CarrotMarket_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rZU-0W-fdV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kT6-Er-N4d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oF-TI-PJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="71"/>
+        </scene>
+        <!--Location Bar View Controller-->
+        <scene sceneID="hh4-Q6-WBe">
+            <objects>
+                <viewController storyboardIdentifier="LocationBarViewController" id="eMz-bJ-5CM" customClass="LocationBarViewController" customModule="CarrotMarket_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gg8-lg-wnR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kR9-hE-R1t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxe-op-HLE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="71"/>
+        </scene>
+        <!--My Carrot Bar View Controller-->
+        <scene sceneID="Ide-Ft-z5i">
+            <objects>
+                <viewController storyboardIdentifier="MyCarrotBarViewController" id="Sgc-sX-pxI" customClass="MyCarrotBarViewController" customModule="CarrotMarket_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0j1-dL-oB6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A3L-Xc-guC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NH6-e9-zyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="71"/>
+        </scene>
+        <!--Chatting Bar View Controller-->
+        <scene sceneID="xHg-t5-Juw">
+            <objects>
+                <viewController storyboardIdentifier="ChattingBarViewController" id="2Jg-rP-3Ht" customClass="ChattingBarViewController" customModule="CarrotMarket_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EZC-vx-630">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="r65-z5-dWp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9z-R9-DTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="71"/>
         </scene>
     </scenes>
     <resources>

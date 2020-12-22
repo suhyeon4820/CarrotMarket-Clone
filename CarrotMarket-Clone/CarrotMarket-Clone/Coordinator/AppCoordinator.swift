@@ -14,7 +14,13 @@ protocol Coordinator: class {
     func start() -> Observable<Void>
 }
 
-
+enum Scene {
+    case HomeBar
+    case LifeBar
+    case LocationBar
+    case ChattingBar
+    case MyCarrotBar
+}
 class AppCoordinator: Coordinator {
 
     let disposeBag = DisposeBag()
@@ -30,13 +36,16 @@ class AppCoordinator: Coordinator {
     
     func start() -> Observable<Void> {
        
+//        let homBarCoordinator = HomeBarCoordinator(navigationController: navigationController)
+//        childCoordinators.append(homBarCoordinator)
+        
         let tabBarVC = UITabBarController()
         
-        let HomeBar = HomeBarViewController()
-        let LifeBar = LifeBarViewController()
-        let LocationBar = LocationBarViewController()
-        let ChattinbBar = ChattingBarViewController()
-        let MyCarrotBar = MyCarrotBarViewController()
+        let HomeBar = HomeBarViewController.instantiate()
+        let LifeBar = LifeBarViewController.instantiate()
+        let LocationBar = LocationBarViewController.instantiate()
+        let ChattinbBar = ChattingBarViewController.instantiate()
+        let MyCarrotBar = MyCarrotBarViewController.instantiate()
 
         HomeBar.title = TabBarKind.HomeBar.title
         LifeBar.title = TabBarKind.LifeBar.title

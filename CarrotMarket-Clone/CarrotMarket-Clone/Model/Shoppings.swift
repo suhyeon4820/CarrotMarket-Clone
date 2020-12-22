@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Shoppings: Decodable {
+    //let index: Int
+    let all: [Shopping]
+    
+    enum CodingKeys: String, CodingKey {
+        //case index
+        case all = "results"
+    }
+}

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChattingBarViewController: UIViewController {
+class ChattingBarViewController: UIViewController, Storyboarded {
     
     var viewModel: ChattingBarViewModel!
 

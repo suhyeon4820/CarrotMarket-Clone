@@ -7,14 +7,15 @@
 
 import UIKit
 
-class LifeBarViewController: UIViewController {
+class LifeBarViewController: UIViewController, Storyboarded {
 
     var viewModel: LifeBarViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemPink
+        
+        //view.backgroundColor = .systemPink
     }
     
 

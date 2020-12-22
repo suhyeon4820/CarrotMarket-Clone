@@ -11,4 +11,7 @@ class HomeBarViewModel {
     
     var coordinator: HomeBarCoordinator?
     
+//    private let shopping: Shopping
+    
+    
 }

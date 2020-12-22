@@ -17,7 +17,7 @@ enum TabBarKind: Int {
     var title: String? {
         switch self {
         case .HomeBar:
-            return "Home"
+            return "홈"
         case .LifeBar:
             return "동네생활"
         case .LocationBar:
