@@ -1,0 +1,23 @@
+{
+    "index": 1,
+    "results": [
+        {
+            "title": "테이블",
+            "location": "종로구",
+            "price": "100",
+            "image": "1"
+        },
+        {
+            "title": "가방",
+            "location": "중구",
+            "price": "100",
+            "image": "2"
+        },
+        {
+            "title": "노트북",
+            "location": "종로구",
+            "price": "100",
+            "image": "3"
+        },
+    ]
+}
