@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -8,6 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+<<<<<<< HEAD
         <!--Tab Bar View Controller-->
         <scene sceneID="oS3-nW-GA4">
             <objects>
@@ -23,6 +28,8 @@
             </objects>
             <point key="canvasLocation" x="-1562" y="33"/>
         </scene>
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
         <!--Home Bar View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -31,6 +38,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-op-cf5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,6 +48,17 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lpd-Y6-irU" id="j1k-Z6-QVB">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+=======
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-tb-boH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="119" id="H7H-Yp-Hy1">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H7H-Yp-Hy1" id="Xne-06-QXH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -49,6 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qQY-op-cf5" secondAttribute="bottom" id="90G-cl-Xc2"/>
                             <constraint firstItem="qQY-op-cf5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y7r-f9-lj7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qQY-op-cf5" secondAttribute="trailing" id="vLO-VP-Uxn"/>
@@ -57,12 +77,23 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="qQY-op-cf5" id="fT6-95-31S"/>
+=======
+                            <constraint firstItem="Dhk-tb-boH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ho-Kp-7dw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dhk-tb-boH" secondAttribute="bottom" id="879-xN-e3o"/>
+                            <constraint firstItem="Dhk-tb-boH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ssd-kX-mkE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dhk-tb-boH" secondAttribute="trailing" id="u0s-mI-Qa3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Dhk-tb-boH" id="L5z-O7-wyf"/>
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-765.21739130434787" y="70.982142857142847"/>
         </scene>
+<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="QeJ-2u-AJB">
             <objects>
@@ -109,6 +140,8 @@
             </objects>
             <point key="canvasLocation" x="-772" y="751"/>
         </scene>
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
         <!--Life Bar View Controller-->
         <scene sceneID="vHD-OE-Ujp">
             <objects>
@@ -116,6 +149,7 @@
                     <view key="view" contentMode="scaleToFill" id="rZU-0W-fdV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7mz-vS-Bzz">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
@@ -149,6 +183,11 @@
                     <connections>
                         <outlet property="tableView" destination="7mz-vS-Bzz" id="HkK-Zo-TNP"/>
                     </connections>
+=======
+                        <viewLayoutGuide key="safeArea" id="kT6-Er-N4d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oF-TI-PJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,7 +240,10 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="loc" width="128" height="128"/>
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

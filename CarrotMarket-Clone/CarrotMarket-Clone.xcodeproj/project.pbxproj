@@ -33,6 +33,7 @@
 		9F3FB45C259084C5000F2E20 /* LifeBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB45B259084C5000F2E20 /* LifeBarViewController.swift */; };
 		9F3FB45F259084F1000F2E20 /* LIfeBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB45E259084F1000F2E20 /* LIfeBarViewModel.swift */; };
 		9F3FB46225908512000F2E20 /* LifeBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB46125908512000F2E20 /* LifeBarCoordinator.swift */; };
+<<<<<<< HEAD
 		9F650C532597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F650C512597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld */; };
 		9F650C56259703E30049BAE7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F650C55259703E30049BAE7 /* DataManager.swift */; };
 		9F8123F0259968D6002056D5 /* HomeBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8123EE259968D6002056D5 /* HomeBarTableViewCell.swift */; };
@@ -59,6 +60,9 @@
 		9FDDECCB2595F434002B2355 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDECCA2595F434002B2355 /* AlarmViewController.swift */; };
 		9FDDECCE2595F45B002B2355 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDECCD2595F45B002B2355 /* AlarmViewModel.swift */; };
 		9FDDECD12595F489002B2355 /* AlarmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDECD02595F489002B2355 /* AlarmCoordinator.swift */; };
+=======
+		9F3FB46725908686000F2E20 /* TabBarKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB46625908686000F2E20 /* TabBarKind.swift */; };
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +96,7 @@
 		9F3FB45B259084C5000F2E20 /* LifeBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeBarViewController.swift; sourceTree = "<group>"; };
 		9F3FB45E259084F1000F2E20 /* LIfeBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIfeBarViewModel.swift; sourceTree = "<group>"; };
 		9F3FB46125908512000F2E20 /* LifeBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeBarCoordinator.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9F650C522597032D0049BAE7 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		9F650C55259703E30049BAE7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9F8123EE259968D6002056D5 /* HomeBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBarTableViewCell.swift; sourceTree = "<group>"; };
@@ -118,6 +123,9 @@
 		9FDDECCA2595F434002B2355 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		9FDDECCD2595F45B002B2355 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		9FDDECD02595F489002B2355 /* AlarmCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCoordinator.swift; sourceTree = "<group>"; };
+=======
+		9F3FB46625908686000F2E20 /* TabBarKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarKind.swift; sourceTree = "<group>"; };
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		9F1219982590B82C004D7388 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +149,44 @@
 				9F931F502594577400471985 /* TabBarViewController.swift */,
 			);
 			path = Scene;
+=======
+		9F1219982590B82C004D7388 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9F2D88EC259053F1003F3709 /* AppCoordinator.swift */,
+				9F3FB46625908686000F2E20 /* TabBarKind.swift */,
+				9F2D88F125905A74003F3709 /* HomeBarCoordinator.swift */,
+				9F3FB46125908512000F2E20 /* LifeBarCoordinator.swift */,
+				9F12197F2590AE68004D7388 /* LocationBarCoordinator.swift */,
+				9F1219882590AF53004D7388 /* ChattingBarCoordinator.swift */,
+				9F1219912590AFF5004D7388 /* MyCarrotBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9F1219A22590B9EA004D7388 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F3FB43C25907B87000F2E20 /* HomeBarViewModel.swift */,
+				9F3FB45E259084F1000F2E20 /* LIfeBarViewModel.swift */,
+				9F1219792590AE19004D7388 /* LocationBarViewModel.swift */,
+				9F1219852590AED4004D7388 /* ChattingBarViewModel.swift */,
+				9F12198E2590AFD5004D7388 /* MyCarrotBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F1219A42590B9F9004D7388 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F2D88E92590521D003F3709 /* HomeBarViewController.swift */,
+				9F3FB45B259084C5000F2E20 /* LifeBarViewController.swift */,
+				9F12197C2590AE4A004D7388 /* LocationBarViewController.swift */,
+				9F1219822590AEC7004D7388 /* ChattingBarViewController.swift */,
+				9F12198B2590AFAC004D7388 /* MyCarrotBarViewController.swift */,
+			);
+			path = ViewController;
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 			sourceTree = "<group>";
 		};
 		9F1219A52590BA02004D7388 /* Model */ = {
@@ -175,11 +222,20 @@
 			children = (
 				9F2D88BE25904516003F3709 /* AppDelegate.swift */,
 				9F2D88C025904516003F3709 /* SceneDelegate.swift */,
+<<<<<<< HEAD
 				9F2D88C425904516003F3709 /* Main.storyboard */,
 				9F650C4E259702F90049BAE7 /* CoreData */,
 				9F1219982590B82C004D7388 /* Scene */,
 				9F931F4D25943FF400471985 /* TabBarMenu */,
 				9F1219A52590BA02004D7388 /* Model */,
+=======
+				9F2D88FE2590608A003F3709 /* Storyboarded.swift */,
+				9F2D88C425904516003F3709 /* Main.storyboard */,
+				9F1219A52590BA02004D7388 /* Model */,
+				9F1219A42590B9F9004D7388 /* ViewController */,
+				9F1219A22590B9EA004D7388 /* ViewModel */,
+				9F1219982590B82C004D7388 /* Coordinator */,
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 				9F2D88C925904517003F3709 /* LaunchScreen.storyboard */,
 				9F2D88C725904517003F3709 /* Assets.xcassets */,
 				9F2D88CC25904517003F3709 /* Info.plist */,
@@ -187,6 +243,7 @@
 			path = "CarrotMarket-Clone";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		9F650C4E259702F90049BAE7 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +410,8 @@
 			path = Alarm;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 		C3701206865BAFE542D64892 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				9F86D6512598C4D5008439CB /* ImageTableViewCell.xib in Resources */,
 				9F2D88CB25904517003F3709 /* LaunchScreen.storyboard in Resources */,
 				9F86D6662598C540008439CB /* PriceTableViewCell.xib in Resources */,
@@ -438,6 +498,12 @@
 				9F2D88C825904517003F3709 /* Assets.xcassets in Resources */,
 				9F2D88C625904516003F3709 /* Main.storyboard in Resources */,
 				9F86D66B2598C555008439CB /* ContentTableViewCell.xib in Resources */,
+=======
+				9F2D88CB25904517003F3709 /* LaunchScreen.storyboard in Resources */,
+				9F1219B32590D666004D7388 /* Shopping.json in Resources */,
+				9F2D88C825904517003F3709 /* Assets.xcassets in Resources */,
+				9F2D88C625904516003F3709 /* Main.storyboard in Resources */,
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F1219832590AEC7004D7388 /* ChattingBarViewController.swift in Sources */,
+<<<<<<< HEAD
 				9F931F782594825400471985 /* ProductTradeViewController.swift in Sources */,
 				9F2D88F225905A74003F3709 /* HomeBarCoordinator.swift in Sources */,
 				9F86D66A2598C555008439CB /* ContentTableViewCell.swift in Sources */,
@@ -540,6 +607,28 @@
 				9F2D88FF2590608A003F3709 /* Storyboarded.swift in Sources */,
 				9F86D60825986B57008439CB /* SellList+CoreDataProperties.swift in Sources */,
 				9F8123F0259968D6002056D5 /* HomeBarTableViewCell.swift in Sources */,
+=======
+				9F2D88F225905A74003F3709 /* HomeBarCoordinator.swift in Sources */,
+				9F2D88BF25904516003F3709 /* AppDelegate.swift in Sources */,
+				9F3FB46725908686000F2E20 /* TabBarKind.swift in Sources */,
+				9F3FB45F259084F1000F2E20 /* LIfeBarViewModel.swift in Sources */,
+				9F3FB45C259084C5000F2E20 /* LifeBarViewController.swift in Sources */,
+				9F12197A2590AE19004D7388 /* LocationBarViewModel.swift in Sources */,
+				9F1219B02590D624004D7388 /* Shopping.swift in Sources */,
+				9F12197D2590AE4A004D7388 /* LocationBarViewController.swift in Sources */,
+				9F2D88EA2590521D003F3709 /* HomeBarViewController.swift in Sources */,
+				9F1219892590AF53004D7388 /* ChattingBarCoordinator.swift in Sources */,
+				9F1219C12590E17C004D7388 /* Shoppings.swift in Sources */,
+				9F1219862590AED4004D7388 /* ChattingBarViewModel.swift in Sources */,
+				9F3FB46225908512000F2E20 /* LifeBarCoordinator.swift in Sources */,
+				9F3FB43D25907B87000F2E20 /* HomeBarViewModel.swift in Sources */,
+				9F2D88C125904516003F3709 /* SceneDelegate.swift in Sources */,
+				9F2D88ED259053F1003F3709 /* AppCoordinator.swift in Sources */,
+				9F1219922590AFF5004D7388 /* MyCarrotBarCoordinator.swift in Sources */,
+				9F1219802590AE68004D7388 /* LocationBarCoordinator.swift in Sources */,
+				9F12198C2590AFAC004D7388 /* MyCarrotBarViewController.swift in Sources */,
+				9F2D88FF2590608A003F3709 /* Storyboarded.swift in Sources */,
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 				9F12198F2590AFD5004D7388 /* MyCarrotBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,6 +831,7 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+<<<<<<< HEAD
 
 /* Begin XCVersionGroup section */
 		9F650C512597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld */ = {
@@ -755,6 +845,8 @@
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 	};
 	rootObject = 9F2D88B325904516003F3709 /* Project object */;
 }

@@ -23,7 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         
         self.appCoordinator = AppCoordinator(window: window, navigationController: navigationController)
+<<<<<<< HEAD
         // 보여지는 화면
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
         appCoordinator?.start()
             .subscribe()
             .disposed(by: disposeBag)

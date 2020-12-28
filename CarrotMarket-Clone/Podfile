@@ -9,5 +9,8 @@ target 'CarrotMarket-Clone' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'Texture'
+<<<<<<< HEAD
     pod 'SnapKit', '~> 5.0.0'
+=======
+>>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 end
