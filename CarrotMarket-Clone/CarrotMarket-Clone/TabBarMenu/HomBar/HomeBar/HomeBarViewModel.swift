@@ -16,9 +16,9 @@ class HomeBarViewModel {
     
     // 새창 열기
     func showAddScreen() {
-        print("연결됨")
         coordinator?.showAddScreen()
     }
     
+
     
 }

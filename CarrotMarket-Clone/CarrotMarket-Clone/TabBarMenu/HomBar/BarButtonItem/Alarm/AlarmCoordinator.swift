@@ -17,6 +17,7 @@ class AlarmCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    @discardableResult
     func start() -> Observable<Void> {
         let alarmViewController: AlarmViewController = .instantiate()
         let alarmViewModel = AlarmViewModel()

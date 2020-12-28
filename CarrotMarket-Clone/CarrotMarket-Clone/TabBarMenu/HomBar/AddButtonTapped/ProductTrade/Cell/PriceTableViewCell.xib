@@ -9,31 +9,31 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceTableViewCell" rowHeight="106" id="KGk-i7-Jjw" customClass="PriceTableViewCell" customModule="CarrotMarket_Clone" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="386" height="106"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceTableViewCell" id="KGk-i7-Jjw" customClass="PriceTableViewCell" customModule="CarrotMarket_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="386" height="106"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="PriceTableViewCell" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wfB-pe-Z7F">
-                        <rect key="frame" x="16" y="5" width="354" height="96"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXh-4w-RXO">
+                        <rect key="frame" x="10" y="5" width="300" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="wfB-pe-Z7F" secondAttribute="bottom" constant="5" id="dzT-Wm-jx9"/>
-                    <constraint firstItem="wfB-pe-Z7F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="n8i-dm-Gdg"/>
-                    <constraint firstAttribute="trailing" secondItem="wfB-pe-Z7F" secondAttribute="trailing" constant="16" id="xk1-cg-7wz"/>
-                    <constraint firstItem="wfB-pe-Z7F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zac-eZ-hwZ"/>
+                    <constraint firstItem="QXh-4w-RXO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5nC-R5-9bM"/>
+                    <constraint firstItem="QXh-4w-RXO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Brt-y0-Ypk"/>
+                    <constraint firstItem="QXh-4w-RXO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Md8-UF-ZtE"/>
+                    <constraint firstAttribute="trailing" secondItem="QXh-4w-RXO" secondAttribute="trailing" constant="10" id="qTj-kk-fgt"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="textField" destination="wfB-pe-Z7F" id="W7n-3z-G9k"/>
+                <outlet property="field" destination="QXh-4w-RXO" id="NMj-BL-jmN"/>
             </connections>
-            <point key="canvasLocation" x="185.50724637681162" y="71.651785714285708"/>
+            <point key="canvasLocation" x="-145" y="52"/>
         </tableViewCell>
     </objects>
 </document>

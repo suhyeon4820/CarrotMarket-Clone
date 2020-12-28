@@ -17,15 +17,15 @@ class MyCarrotBarCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    @discardableResult
     func start() -> Observable<Void> {
         let myCarrotBarViewController: MyCarrotBarViewController = .instantiate()
         let myCarrotBarViewModel = MyCarrotBarViewModel()
         myCarrotBarViewModel.coordinator = self
         myCarrotBarViewController.viewModel = myCarrotBarViewModel
-        myCarrotBarViewController.tabBarItem = UITabBarItem(title: "나의 당근", image: UIImage(systemName: "slider.horizontal.3"), tag: 4)
+        myCarrotBarViewController.tabBarItem = UITabBarItem(title: "나의 당근", image: UIImage(systemName: "person"), tag: 4)
         navigationController.setViewControllers([myCarrotBarViewController], animated: false)
         return .never()
     }
-    
     
 }

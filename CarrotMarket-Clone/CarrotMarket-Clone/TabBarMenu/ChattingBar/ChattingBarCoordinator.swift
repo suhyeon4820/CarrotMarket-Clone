@@ -17,12 +17,13 @@ class ChattingBarCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    @discardableResult
     func start() -> Observable<Void> {
         let chattingBarViewController: ChattingBarViewController = .instantiate()
         let chattingBarViewModel = ChattingBarViewModel()
         chattingBarViewModel.coordinator = self
         chattingBarViewController.viewModel = chattingBarViewModel
-        chattingBarViewController.tabBarItem = UITabBarItem(title: "채팅", image: UIImage(systemName: "slider.horizontal.3"), tag: 3)
+        chattingBarViewController.tabBarItem = UITabBarItem(title: "채팅", image: UIImage(systemName: "bubble.left.and.bubble.right"), tag: 3)
         navigationController.setViewControllers([chattingBarViewController], animated: false)
        return .never()
     }

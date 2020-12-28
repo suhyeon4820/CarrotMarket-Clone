@@ -17,6 +17,7 @@ class CategoryCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    @discardableResult
     func start() -> Observable<Void> {
         let categoryViewController: CategoryViewController = .instantiate()
         let categoryViewModel = CategoryViewModel()

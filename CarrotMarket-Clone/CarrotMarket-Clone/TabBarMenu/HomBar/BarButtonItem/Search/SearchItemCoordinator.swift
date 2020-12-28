@@ -17,6 +17,7 @@ class SearchItemCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    @discardableResult
     func start() -> Observable<Void> {
         let searchItemViewController: SearchItemViewController = .instantiate()
         let searchItemViewModel = SearchItemViewModel()

@@ -12,6 +12,8 @@ import RxSwift
 protocol Coordinator: class {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
+    
+    @discardableResult
     func start() -> Observable<Void>
 }
 
@@ -28,8 +30,8 @@ class AppCoordinator: Coordinator {
         self.window = window
         self.navigationController = navigationController
     }
-    
 
+    @discardableResult
     func start() -> Observable<Void> {
         
         window.rootViewController = TabBarViewController()

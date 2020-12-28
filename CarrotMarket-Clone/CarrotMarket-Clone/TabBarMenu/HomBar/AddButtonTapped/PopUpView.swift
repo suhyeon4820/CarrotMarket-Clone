@@ -25,7 +25,7 @@ class PopUpView: UIView {
         self.frame = UIScreen.main.bounds
         self.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 0.5)
         
-        self.addSubview(addButton)
+        self.addSubview(addButton); self.addSubview(plusIconImage)
         self.addSubview(firstButton); self.addSubview(firstLabel)
         self.addSubview(secondButton); self.addSubview(secondLabel)
         rxBind()
@@ -60,16 +60,24 @@ class PopUpView: UIView {
     
     // MARK: - AddButton
     let addButton: UIButton = {
-        let addButton = UIButton(type: .close)
-        addButton.tintColor = .orange
-        addButton.layer.frame = CGRect(x: 250, y: 450, width: 50, height: 50)
+        let addButton = UIButton(type: .custom)
         addButton.backgroundColor = .white
-        //addButton.imageView?.image = UIImage(systemName: "plus.circle")
+        addButton.layer.frame = CGRect(x: 250, y: 450, width: 50, height: 50)
+        // 테두리
         addButton.layer.cornerRadius = 25
         addButton.layer.borderWidth = 0.25
         addButton.layer.borderColor = UIColor.lightGray.cgColor
         addButton.clipsToBounds = true
         return addButton
+    }()
+    
+    // MARK: - ButtonIcon
+    let plusIconImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.layer.frame = CGRect(x: 260, y: 460, width: 30, height: 30)
+        imageView.image = UIImage(systemName: "multiply")
+        imageView.tintColor = .orange
+        return imageView
     }()
     
     let firstButton: UIButton = {

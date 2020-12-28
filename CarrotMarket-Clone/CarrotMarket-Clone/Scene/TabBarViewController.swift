@@ -16,6 +16,7 @@ class TabBarViewController: UITabBarController {
     let tab3 = ChattingBarCoordinator(navigationController: UINavigationController())
     let tab4 = MyCarrotBarCoordinator(navigationController: UINavigationController())
  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewControllers = [tab0.navigationController,
@@ -23,6 +24,8 @@ class TabBarViewController: UITabBarController {
                            tab2.navigationController,
                            tab3.navigationController,
                            tab4.navigationController]
+        
+        
         tab0.start()
         tab1.start()
         tab2.start()
