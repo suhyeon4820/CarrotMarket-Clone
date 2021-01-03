@@ -13,8 +13,7 @@ class LocationBarViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarItem.selectedImage = UIImage(systemName: "location.north.line.fill")
-
+       
         //view.backgroundColor = .purple
     }
     

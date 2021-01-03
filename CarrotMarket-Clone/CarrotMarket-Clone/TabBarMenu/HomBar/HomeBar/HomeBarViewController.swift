@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 import RxSwift
 import RxCocoa
+import Floaty
 
 
 class HomeBarViewController: UIViewController, Storyboarded {
@@ -24,17 +25,32 @@ class HomeBarViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarItem.selectedImage = UIImage(systemName: "house.fill")
-        
+     
+        // tableView
         tableView.delegate = self
         tableView.dataSource = self
         list = DataManager.shared.fetchTheDate()
         tableView.reloadData()
         tableView.register(HomeBarTableViewCell.nib(), forCellReuseIdentifier: HomeBarTableViewCell.identifier)
         
-        view.addSubview(addButton)
-        view.addSubview(plusIconImage)
+       
+        let floaty = Floaty()
+        floaty.buttonColor = #colorLiteral(red: 0.9960784314, green: 0.5450980392, blue: 0.2274509804, alpha: 1)
+        floaty.plusColor = .white
+   
+        floaty.rotationDegrees = -135
+        let reverseItem = floaty.items.reversed()
+        floaty.paddingX = self.view.frame.width/6 - floaty.frame.width/2
+        floaty.paddingY = self.view.frame.height/6 - floaty.frame.height/2
         
+        floaty.addItem("중고거래", icon: UIImage(systemName: "house"), handler: {item in
+            self.viewModel.showProductTradePage()
+            floaty.close()
+        }).buttonColor = .orange
+        floaty.addItem("동네홍보", icon: UIImage(systemName: "house"))
+        
+        self.view.addSubview(floaty)
+
         rxbind()
         setTitle()
         navigationItem()
@@ -45,12 +61,11 @@ class HomeBarViewController: UIViewController, Storyboarded {
         self.list = DataManager.shared.fetchTheDate()
         self.tableView.reloadData()
     }
+    
     // MARK: - RxBind
     func rxbind() {
         // 화면 이동
-        addButton.rx.tap.bind { [self] in
-            viewModel.showAddScreen()
-        }.disposed(by: disposeBag)
+        
     }
     
     // MARK: - Title
@@ -65,40 +80,27 @@ class HomeBarViewController: UIViewController, Storyboarded {
     
     // MARK: - NavigationItem
     func navigationItem() {
-        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(showPage))
-        let categoryBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "slider.horizontal.3") , style: .plain, target: self, action: nil)
-        let alarmBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bell") , style: .plain, target: self, action: nil)
+        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(showSearchPage))
+        let categoryBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "slider.horizontal.3") , style: .plain, target: self, action: #selector(showCategoryPage))
+        let alarmBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bell") , style: .plain, target: self, action:  #selector(showAlarmPage))
         searchBarButtonItem.tintColor = .black
         categoryBarButtonItem.tintColor = .black
         alarmBarButtonItem.tintColor = .black
         navigationItem.rightBarButtonItems = [categoryBarButtonItem, searchBarButtonItem, alarmBarButtonItem]
     }
     
-    @objc func showPage() {
-        //viewModel.showPage()
+    @objc func showSearchPage() {
+        viewModel.showSearcItem()
     }
     
-    // MARK: - AddButton
-    let addButton: UIButton = {
-        let addButton = UIButton(type: .custom)
-        addButton.backgroundColor = .orange
-        addButton.layer.frame = CGRect(x: 250, y: 450, width: 50, height: 50)
-        // 테두리
-        addButton.layer.cornerRadius = 25
-        addButton.layer.borderWidth = 0.25
-        addButton.layer.borderColor = UIColor.lightGray.cgColor
-        addButton.clipsToBounds = true
-        return addButton
-    }()
+    @objc func showCategoryPage() {
+        viewModel.showCategoryItem()
+    }
     
-    // MARK: - ButtonIcon
-    let plusIconImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.layer.frame = CGRect(x: 260, y: 460, width: 30, height: 30)
-        imageView.image = UIImage(systemName: "plus")
-        imageView.tintColor = .white
-        return imageView
-    }()
+    @objc func showAlarmPage() {
+        viewModel.showAlarmItem()
+    }
+
 }
 
 extension HomeBarViewController: UITableViewDelegate, UITableViewDataSource {

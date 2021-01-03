@@ -13,6 +13,8 @@ class CategoryCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
+    var parentCoordinator: HomeBarCoordinator?
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -23,9 +25,14 @@ class CategoryCoordinator: Coordinator {
         let categoryViewModel = CategoryViewModel()
         categoryViewModel.coordinator = self
         categoryViewController.viewModel = categoryViewModel
-        navigationController.setViewControllers([categoryViewController], animated: false)
-
+        navigationController.pushViewController(categoryViewController, animated: true)
         return Observable.never()
+    }
+    
+    // Parent로 돌아갈 때
+    func didFinish() {
+        parentCoordinator?.childDidFinish(self)
+        navigationController.dismiss(animated: true, completion: nil)
     }
     
     

@@ -15,10 +15,24 @@ class HomeBarViewModel {
     var coordinator: HomeBarCoordinator?
     
     // 새창 열기
+    func showProductTradePage() {
+        coordinator?.showProductTradePage()
+    }
+    
     func showAddScreen() {
         coordinator?.showAddScreen()
     }
     
-
+    func showSearcItem() {
+        coordinator?.showSearcItem()
+    }
+    
+    func showCategoryItem() {
+        coordinator?.showCategoryItem()
+    }
+    
+    func showAlarmItem() {
+        coordinator?.showAlarmItem()
+    }
     
 }

@@ -11,4 +11,7 @@ class AlarmViewModel {
     
     var coordinator: AlarmCoordinator?
     
+    func didFinish() {
+        coordinator?.didFinish()
+    }
 }

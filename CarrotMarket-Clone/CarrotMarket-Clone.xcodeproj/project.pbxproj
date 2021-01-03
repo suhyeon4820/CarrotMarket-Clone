@@ -20,6 +20,8 @@
 		9F1219B02590D624004D7388 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1219AF2590D624004D7388 /* Shopping.swift */; };
 		9F1219B32590D666004D7388 /* Shopping.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F1219B22590D666004D7388 /* Shopping.json */; };
 		9F1219C12590E17C004D7388 /* Shoppings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1219C02590E17C004D7388 /* Shoppings.swift */; };
+		9F20162625A09CD7001A0ACF /* ProductTradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20162525A09CD7001A0ACF /* ProductTradeViewModel.swift */; };
+		9F20162925A09D07001A0ACF /* ProductTradeCoordiantor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20162825A09D07001A0ACF /* ProductTradeCoordiantor.swift */; };
 		9F2D88BF25904516003F3709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D88BE25904516003F3709 /* AppDelegate.swift */; };
 		9F2D88C125904516003F3709 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D88C025904516003F3709 /* SceneDelegate.swift */; };
 		9F2D88C625904516003F3709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D88C425904516003F3709 /* Main.storyboard */; };
@@ -33,21 +35,12 @@
 		9F3FB45C259084C5000F2E20 /* LifeBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB45B259084C5000F2E20 /* LifeBarViewController.swift */; };
 		9F3FB45F259084F1000F2E20 /* LIfeBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB45E259084F1000F2E20 /* LIfeBarViewModel.swift */; };
 		9F3FB46225908512000F2E20 /* LifeBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB46125908512000F2E20 /* LifeBarCoordinator.swift */; };
-<<<<<<< HEAD
 		9F650C532597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F650C512597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld */; };
 		9F650C56259703E30049BAE7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F650C55259703E30049BAE7 /* DataManager.swift */; };
 		9F8123F0259968D6002056D5 /* HomeBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8123EE259968D6002056D5 /* HomeBarTableViewCell.swift */; };
 		9F8123F1259968D6002056D5 /* HomeBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8123EF259968D6002056D5 /* HomeBarTableViewCell.xib */; };
 		9F86D60725986B57008439CB /* SellList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D60525986B57008439CB /* SellList+CoreDataClass.swift */; };
 		9F86D60825986B57008439CB /* SellList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D60625986B57008439CB /* SellList+CoreDataProperties.swift */; };
-		9F86D6502598C4D5008439CB /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D64E2598C4D5008439CB /* ImageTableViewCell.swift */; };
-		9F86D6512598C4D5008439CB /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86D64F2598C4D5008439CB /* ImageTableViewCell.xib */; };
-		9F86D6652598C540008439CB /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D6632598C540008439CB /* PriceTableViewCell.swift */; };
-		9F86D6662598C540008439CB /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86D6642598C540008439CB /* PriceTableViewCell.xib */; };
-		9F86D66A2598C555008439CB /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D6682598C555008439CB /* ContentTableViewCell.swift */; };
-		9F86D66B2598C555008439CB /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86D6692598C555008439CB /* ContentTableViewCell.xib */; };
-		9F86D67A2598DC2B008439CB /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D6782598DC2B008439CB /* TitleTableViewCell.swift */; };
-		9F86D67B2598DC2B008439CB /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86D6792598DC2B008439CB /* TitleTableViewCell.xib */; };
 		9F931F512594577400471985 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F931F502594577400471985 /* TabBarViewController.swift */; };
 		9F931F6C2594725600471985 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F931F6B2594725600471985 /* PopUpView.swift */; };
 		9F931F782594825400471985 /* ProductTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F931F772594825400471985 /* ProductTradeViewController.swift */; };
@@ -60,9 +53,6 @@
 		9FDDECCB2595F434002B2355 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDECCA2595F434002B2355 /* AlarmViewController.swift */; };
 		9FDDECCE2595F45B002B2355 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDECCD2595F45B002B2355 /* AlarmViewModel.swift */; };
 		9FDDECD12595F489002B2355 /* AlarmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDECD02595F489002B2355 /* AlarmCoordinator.swift */; };
-=======
-		9F3FB46725908686000F2E20 /* TabBarKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3FB46625908686000F2E20 /* TabBarKind.swift */; };
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +71,8 @@
 		9F1219AF2590D624004D7388 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 		9F1219B22590D666004D7388 /* Shopping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shopping.json; sourceTree = "<group>"; };
 		9F1219C02590E17C004D7388 /* Shoppings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoppings.swift; sourceTree = "<group>"; };
+		9F20162525A09CD7001A0ACF /* ProductTradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTradeViewModel.swift; sourceTree = "<group>"; };
+		9F20162825A09D07001A0ACF /* ProductTradeCoordiantor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTradeCoordiantor.swift; sourceTree = "<group>"; };
 		9F2D88BB25904516003F3709 /* CarrotMarket-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarrotMarket-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2D88BE25904516003F3709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2D88C025904516003F3709 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,21 +88,12 @@
 		9F3FB45B259084C5000F2E20 /* LifeBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeBarViewController.swift; sourceTree = "<group>"; };
 		9F3FB45E259084F1000F2E20 /* LIfeBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIfeBarViewModel.swift; sourceTree = "<group>"; };
 		9F3FB46125908512000F2E20 /* LifeBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeBarCoordinator.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		9F650C522597032D0049BAE7 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		9F650C55259703E30049BAE7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9F8123EE259968D6002056D5 /* HomeBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBarTableViewCell.swift; sourceTree = "<group>"; };
 		9F8123EF259968D6002056D5 /* HomeBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBarTableViewCell.xib; sourceTree = "<group>"; };
 		9F86D60525986B57008439CB /* SellList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellList+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		9F86D60625986B57008439CB /* SellList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellList+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		9F86D64E2598C4D5008439CB /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
-		9F86D64F2598C4D5008439CB /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
-		9F86D6632598C540008439CB /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
-		9F86D6642598C540008439CB /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
-		9F86D6682598C555008439CB /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
-		9F86D6692598C555008439CB /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
-		9F86D6782598DC2B008439CB /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
-		9F86D6792598DC2B008439CB /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		9F931F502594577400471985 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9F931F6B2594725600471985 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		9F931F772594825400471985 /* ProductTradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTradeViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +106,6 @@
 		9FDDECCA2595F434002B2355 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		9FDDECCD2595F45B002B2355 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		9FDDECD02595F489002B2355 /* AlarmCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCoordinator.swift; sourceTree = "<group>"; };
-=======
-		9F3FB46625908686000F2E20 /* TabBarKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarKind.swift; sourceTree = "<group>"; };
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
 		9F1219982590B82C004D7388 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,44 +128,6 @@
 				9F931F502594577400471985 /* TabBarViewController.swift */,
 			);
 			path = Scene;
-=======
-		9F1219982590B82C004D7388 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				9F2D88EC259053F1003F3709 /* AppCoordinator.swift */,
-				9F3FB46625908686000F2E20 /* TabBarKind.swift */,
-				9F2D88F125905A74003F3709 /* HomeBarCoordinator.swift */,
-				9F3FB46125908512000F2E20 /* LifeBarCoordinator.swift */,
-				9F12197F2590AE68004D7388 /* LocationBarCoordinator.swift */,
-				9F1219882590AF53004D7388 /* ChattingBarCoordinator.swift */,
-				9F1219912590AFF5004D7388 /* MyCarrotBarCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		9F1219A22590B9EA004D7388 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				9F3FB43C25907B87000F2E20 /* HomeBarViewModel.swift */,
-				9F3FB45E259084F1000F2E20 /* LIfeBarViewModel.swift */,
-				9F1219792590AE19004D7388 /* LocationBarViewModel.swift */,
-				9F1219852590AED4004D7388 /* ChattingBarViewModel.swift */,
-				9F12198E2590AFD5004D7388 /* MyCarrotBarViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		9F1219A42590B9F9004D7388 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9F2D88E92590521D003F3709 /* HomeBarViewController.swift */,
-				9F3FB45B259084C5000F2E20 /* LifeBarViewController.swift */,
-				9F12197C2590AE4A004D7388 /* LocationBarViewController.swift */,
-				9F1219822590AEC7004D7388 /* ChattingBarViewController.swift */,
-				9F12198B2590AFAC004D7388 /* MyCarrotBarViewController.swift */,
-			);
-			path = ViewController;
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 			sourceTree = "<group>";
 		};
 		9F1219A52590BA02004D7388 /* Model */ = {
@@ -222,28 +163,18 @@
 			children = (
 				9F2D88BE25904516003F3709 /* AppDelegate.swift */,
 				9F2D88C025904516003F3709 /* SceneDelegate.swift */,
-<<<<<<< HEAD
 				9F2D88C425904516003F3709 /* Main.storyboard */,
+				9F2D88C925904517003F3709 /* LaunchScreen.storyboard */,
 				9F650C4E259702F90049BAE7 /* CoreData */,
 				9F1219982590B82C004D7388 /* Scene */,
 				9F931F4D25943FF400471985 /* TabBarMenu */,
 				9F1219A52590BA02004D7388 /* Model */,
-=======
-				9F2D88FE2590608A003F3709 /* Storyboarded.swift */,
-				9F2D88C425904516003F3709 /* Main.storyboard */,
-				9F1219A52590BA02004D7388 /* Model */,
-				9F1219A42590B9F9004D7388 /* ViewController */,
-				9F1219A22590B9EA004D7388 /* ViewModel */,
-				9F1219982590B82C004D7388 /* Coordinator */,
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
-				9F2D88C925904517003F3709 /* LaunchScreen.storyboard */,
 				9F2D88C725904517003F3709 /* Assets.xcassets */,
 				9F2D88CC25904517003F3709 /* Info.plist */,
 			);
 			path = "CarrotMarket-Clone";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		9F650C4E259702F90049BAE7 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +231,10 @@
 			children = (
 				9F931F71259481A200471985 /* HomeBar */,
 				9F931F74259481DA00471985 /* BarButtonItem */,
-				9F931F5B2594645A00471985 /* AddButtonTapped */,
+				9F931F6B2594725600471985 /* PopUpView.swift */,
+				9F931F772594825400471985 /* ProductTradeViewController.swift */,
+				9F20162525A09CD7001A0ACF /* ProductTradeViewModel.swift */,
+				9F20162825A09D07001A0ACF /* ProductTradeCoordiantor.swift */,
 			);
 			path = HomBar;
 			sourceTree = "<group>";
@@ -315,16 +249,6 @@
 				9F931F4725943F0200471985 /* MyCarrotBar */,
 			);
 			path = TabBarMenu;
-			sourceTree = "<group>";
-		};
-		9F931F5B2594645A00471985 /* AddButtonTapped */ = {
-			isa = PBXGroup;
-			children = (
-				9F931F6B2594725600471985 /* PopUpView.swift */,
-				9F931F762594821C00471985 /* ProductTrade */,
-				9F931F752594820100471985 /* localPromotion */,
-			);
-			path = AddButtonTapped;
 			sourceTree = "<group>";
 		};
 		9F931F71259481A200471985 /* HomeBar */ = {
@@ -347,37 +271,6 @@
 				9FDDECBE2595F2B1002B2355 /* Alarm */,
 			);
 			path = BarButtonItem;
-			sourceTree = "<group>";
-		};
-		9F931F752594820100471985 /* localPromotion */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = localPromotion;
-			sourceTree = "<group>";
-		};
-		9F931F762594821C00471985 /* ProductTrade */ = {
-			isa = PBXGroup;
-			children = (
-				9FDDEC952595DE2A002B2355 /* Cell */,
-				9F931F772594825400471985 /* ProductTradeViewController.swift */,
-			);
-			path = ProductTrade;
-			sourceTree = "<group>";
-		};
-		9FDDEC952595DE2A002B2355 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				9F86D64E2598C4D5008439CB /* ImageTableViewCell.swift */,
-				9F86D64F2598C4D5008439CB /* ImageTableViewCell.xib */,
-				9F86D6782598DC2B008439CB /* TitleTableViewCell.swift */,
-				9F86D6792598DC2B008439CB /* TitleTableViewCell.xib */,
-				9F86D6632598C540008439CB /* PriceTableViewCell.swift */,
-				9F86D6642598C540008439CB /* PriceTableViewCell.xib */,
-				9F86D6682598C555008439CB /* ContentTableViewCell.swift */,
-				9F86D6692598C555008439CB /* ContentTableViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		9FDDECBC2595F29B002B2355 /* Search */ = {
@@ -410,8 +303,6 @@
 			path = Alarm;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 		C3701206865BAFE542D64892 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,22 +379,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				9F86D6512598C4D5008439CB /* ImageTableViewCell.xib in Resources */,
 				9F2D88CB25904517003F3709 /* LaunchScreen.storyboard in Resources */,
-				9F86D6662598C540008439CB /* PriceTableViewCell.xib in Resources */,
 				9F1219B32590D666004D7388 /* Shopping.json in Resources */,
-				9F86D67B2598DC2B008439CB /* TitleTableViewCell.xib in Resources */,
 				9F8123F1259968D6002056D5 /* HomeBarTableViewCell.xib in Resources */,
 				9F2D88C825904517003F3709 /* Assets.xcassets in Resources */,
 				9F2D88C625904516003F3709 /* Main.storyboard in Resources */,
-				9F86D66B2598C555008439CB /* ContentTableViewCell.xib in Resources */,
-=======
-				9F2D88CB25904517003F3709 /* LaunchScreen.storyboard in Resources */,
-				9F1219B32590D666004D7388 /* Shopping.json in Resources */,
-				9F2D88C825904517003F3709 /* Assets.xcassets in Resources */,
-				9F2D88C625904516003F3709 /* Main.storyboard in Resources */,
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,22 +397,26 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CarrotMarket-Clone/Pods-CarrotMarket-Clone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,10 +450,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F1219832590AEC7004D7388 /* ChattingBarViewController.swift in Sources */,
-<<<<<<< HEAD
 				9F931F782594825400471985 /* ProductTradeViewController.swift in Sources */,
 				9F2D88F225905A74003F3709 /* HomeBarCoordinator.swift in Sources */,
-				9F86D66A2598C555008439CB /* ContentTableViewCell.swift in Sources */,
 				9FDDECCB2595F434002B2355 /* AlarmViewController.swift in Sources */,
 				9F2D88BF25904516003F3709 /* AppDelegate.swift in Sources */,
 				9F3FB45F259084F1000F2E20 /* LIfeBarViewModel.swift in Sources */,
@@ -577,17 +459,18 @@
 				9FDDECB72595F08A002B2355 /* SearchItemViewModel.swift in Sources */,
 				9FDDECC72595F304002B2355 /* CategoryCoordinator.swift in Sources */,
 				9F3FB45C259084C5000F2E20 /* LifeBarViewController.swift in Sources */,
+				9F20162625A09CD7001A0ACF /* ProductTradeViewModel.swift in Sources */,
 				9F12197A2590AE19004D7388 /* LocationBarViewModel.swift in Sources */,
 				9F1219B02590D624004D7388 /* Shopping.swift in Sources */,
 				9F86D60725986B57008439CB /* SellList+CoreDataClass.swift in Sources */,
 				9F12197D2590AE4A004D7388 /* LocationBarViewController.swift in Sources */,
 				9F2D88EA2590521D003F3709 /* HomeBarViewController.swift in Sources */,
-				9F86D67A2598DC2B008439CB /* TitleTableViewCell.swift in Sources */,
 				9F1219892590AF53004D7388 /* ChattingBarCoordinator.swift in Sources */,
 				9F1219C12590E17C004D7388 /* Shoppings.swift in Sources */,
 				9FDDECBA2595F0BE002B2355 /* SearchItemCoordinator.swift in Sources */,
 				9F1219862590AED4004D7388 /* ChattingBarViewModel.swift in Sources */,
 				9F3FB46225908512000F2E20 /* LifeBarCoordinator.swift in Sources */,
+				9F20162925A09D07001A0ACF /* ProductTradeCoordiantor.swift in Sources */,
 				9F650C56259703E30049BAE7 /* DataManager.swift in Sources */,
 				9F3FB43D25907B87000F2E20 /* HomeBarViewModel.swift in Sources */,
 				9F931F512594577400471985 /* TabBarViewController.swift in Sources */,
@@ -598,37 +481,13 @@
 				9FDDECD12595F489002B2355 /* AlarmCoordinator.swift in Sources */,
 				9F2D88ED259053F1003F3709 /* AppCoordinator.swift in Sources */,
 				9F650C532597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld in Sources */,
-				9F86D6502598C4D5008439CB /* ImageTableViewCell.swift in Sources */,
 				9F1219922590AFF5004D7388 /* MyCarrotBarCoordinator.swift in Sources */,
 				9FDDECC42595F2EE002B2355 /* CategoryViewController.swift in Sources */,
 				9F1219802590AE68004D7388 /* LocationBarCoordinator.swift in Sources */,
-				9F86D6652598C540008439CB /* PriceTableViewCell.swift in Sources */,
 				9F12198C2590AFAC004D7388 /* MyCarrotBarViewController.swift in Sources */,
 				9F2D88FF2590608A003F3709 /* Storyboarded.swift in Sources */,
 				9F86D60825986B57008439CB /* SellList+CoreDataProperties.swift in Sources */,
 				9F8123F0259968D6002056D5 /* HomeBarTableViewCell.swift in Sources */,
-=======
-				9F2D88F225905A74003F3709 /* HomeBarCoordinator.swift in Sources */,
-				9F2D88BF25904516003F3709 /* AppDelegate.swift in Sources */,
-				9F3FB46725908686000F2E20 /* TabBarKind.swift in Sources */,
-				9F3FB45F259084F1000F2E20 /* LIfeBarViewModel.swift in Sources */,
-				9F3FB45C259084C5000F2E20 /* LifeBarViewController.swift in Sources */,
-				9F12197A2590AE19004D7388 /* LocationBarViewModel.swift in Sources */,
-				9F1219B02590D624004D7388 /* Shopping.swift in Sources */,
-				9F12197D2590AE4A004D7388 /* LocationBarViewController.swift in Sources */,
-				9F2D88EA2590521D003F3709 /* HomeBarViewController.swift in Sources */,
-				9F1219892590AF53004D7388 /* ChattingBarCoordinator.swift in Sources */,
-				9F1219C12590E17C004D7388 /* Shoppings.swift in Sources */,
-				9F1219862590AED4004D7388 /* ChattingBarViewModel.swift in Sources */,
-				9F3FB46225908512000F2E20 /* LifeBarCoordinator.swift in Sources */,
-				9F3FB43D25907B87000F2E20 /* HomeBarViewModel.swift in Sources */,
-				9F2D88C125904516003F3709 /* SceneDelegate.swift in Sources */,
-				9F2D88ED259053F1003F3709 /* AppCoordinator.swift in Sources */,
-				9F1219922590AFF5004D7388 /* MyCarrotBarCoordinator.swift in Sources */,
-				9F1219802590AE68004D7388 /* LocationBarCoordinator.swift in Sources */,
-				9F12198C2590AFAC004D7388 /* MyCarrotBarViewController.swift in Sources */,
-				9F2D88FF2590608A003F3709 /* Storyboarded.swift in Sources */,
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 				9F12198F2590AFD5004D7388 /* MyCarrotBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,7 +690,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-<<<<<<< HEAD
 
 /* Begin XCVersionGroup section */
 		9F650C512597032D0049BAE7 /* CarrotMarket-Clone.xcdatamodeld */ = {
@@ -845,8 +703,6 @@
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
-=======
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 	};
 	rootObject = 9F2D88B325904516003F3709 /* Project object */;
 }

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-<<<<<<< HEAD
-   LastUpgradeVersion = "1220"
-=======
    LastUpgradeVersion = "0930"
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -18,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92AE91B7869254D33EFD5001B25C1F6C"
+               BlueprintIdentifier = "8891FE8B3C18E1EED574AA6A4D747D09"
                BuildableName = "Pods_CarrotMarket_Clone.framework"
                BlueprintName = "Pods-CarrotMarket-Clone"
                ReferencedContainer = "container:Pods.xcodeproj">

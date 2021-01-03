@@ -24,6 +24,7 @@ class ChattingBarCoordinator: Coordinator {
         chattingBarViewModel.coordinator = self
         chattingBarViewController.viewModel = chattingBarViewModel
         chattingBarViewController.tabBarItem = UITabBarItem(title: "채팅", image: UIImage(systemName: "bubble.left.and.bubble.right"), tag: 3)
+        chattingBarViewController.tabBarItem.selectedImage = UIImage(systemName: "bubble.left.and.bubble.right.fill")
         navigationController.setViewControllers([chattingBarViewController], animated: false)
        return .never()
     }

@@ -24,6 +24,7 @@ class LifeBarCoordinator: Coordinator {
         lifeBarViewModel.coordinator = self
         lifeBarViewController.viewModel = lifeBarViewModel
         lifeBarViewController.tabBarItem = UITabBarItem(title: "동네생활", image: UIImage(systemName: "newspaper"), tag: 1)
+        lifeBarViewController.tabBarItem.selectedImage = UIImage(systemName: "newspaper.fill")
         navigationController.setViewControllers([lifeBarViewController], animated: false)
         return .never()
     }

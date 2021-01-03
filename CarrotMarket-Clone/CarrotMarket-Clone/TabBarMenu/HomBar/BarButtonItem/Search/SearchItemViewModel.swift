@@ -10,4 +10,9 @@ import UIKit
 class SearchItemViewModel {
     
     var coordinator: SearchItemCoordinator?
+    
+    func didFinish() {
+        print("viewModel")
+        coordinator?.didFinish()
+    }
 }

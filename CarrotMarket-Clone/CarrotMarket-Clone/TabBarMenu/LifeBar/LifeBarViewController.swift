@@ -22,7 +22,7 @@ class LifeBarViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         //loadData()
         
-        tabBarItem.selectedImage = UIImage(systemName: "newspaper.fill")
+
         
         
     }

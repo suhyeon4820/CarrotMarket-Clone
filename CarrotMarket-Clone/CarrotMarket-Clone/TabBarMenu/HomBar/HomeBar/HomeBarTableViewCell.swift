@@ -26,8 +26,16 @@ class HomeBarTableViewCell: UITableViewCell {
     
     func uploadData(_ model: SellList) {
         itemImage.layer.cornerRadius = 5
+        
+        let formatter = DateFormatter()
+        
+        var dateInfo = model.createdate
+        formatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        
         titleText.text = model.title
-        priceText.text = "\(model.price)"
+        createTime.text = formatter.string(from: dateInfo!)
+        priceText.text = "\(model.price)" + "원"
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

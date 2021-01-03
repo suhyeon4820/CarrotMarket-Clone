@@ -12,6 +12,7 @@ class AlarmCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
+    var parentCoordinator: HomeBarCoordinator?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -23,9 +24,14 @@ class AlarmCoordinator: Coordinator {
         let alarmViewModel = AlarmViewModel()
         alarmViewModel.coordinator = self
         alarmViewController.viewModel = alarmViewModel
-        navigationController.setViewControllers([alarmViewController], animated: false)
+        navigationController.pushViewController(alarmViewController, animated: true)
         return Observable.never()
     }
     
+    // Parent로 돌아갈 때
+    func didFinish() {
+        parentCoordinator?.childDidFinish(self)
+        navigationController.dismiss(animated: true, completion: nil)
+    }
     
 }

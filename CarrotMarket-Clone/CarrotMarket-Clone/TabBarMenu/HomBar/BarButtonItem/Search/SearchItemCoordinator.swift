@@ -12,6 +12,8 @@ class SearchItemCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
+    // 부모 Coordinator
+    var parentCoordinator: HomeBarCoordinator?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -23,9 +25,14 @@ class SearchItemCoordinator: Coordinator {
         let searchItemViewModel = SearchItemViewModel()
         searchItemViewModel.coordinator = self
         searchItemViewController.viewModel = searchItemViewModel
-        navigationController.setViewControllers([searchItemViewController], animated: false)
+        // setviewController와 pushviewcontroller의 차이
+        navigationController.pushViewController(searchItemViewController, animated: true)
         return Observable.never()
     }
-    
+    // Parent로 돌아갈 때
+    func didFinish() {
+        parentCoordinator?.childDidFinish(self)
+        navigationController.dismiss(animated: true, completion: nil)
+    }
     
 }

@@ -55,7 +55,7 @@ extension DataManager {
    
     
     // MARK: - Create
-    func createItem(title: String, price: Int, category: String, content: String) {
+    func createItem(title: String, price: Int, category: String, content: String, createDate: Date) {
         let newItems = SellList(context: context)
         newItems.title = title
         newItems.price = Int16(price)

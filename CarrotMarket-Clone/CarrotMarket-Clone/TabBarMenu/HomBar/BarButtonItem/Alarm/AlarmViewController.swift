@@ -13,19 +13,18 @@ class AlarmViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func navigationItem() {
+        /// leftBarButtonItem
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.backward"), style: .plain, target: self, action: #selector(didFinish))
     }
-    */
-
+    /// leftBarButtonItem action
+    @objc func didFinish() {
+        viewModel.didFinish()
+        navigationController?.popViewController(animated: true)
+    }
 }

@@ -6,15 +6,11 @@
 //
 
 import UIKit
-<<<<<<< HEAD
 import CoreData
-=======
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-<<<<<<< HEAD
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -24,12 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 선택되지 않은 상태
         UITabBar.appearance().unselectedItemTintColor = .black
 
-=======
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
         return true
     }
 
@@ -46,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-<<<<<<< HEAD
     
     // MARK: - Core Data stack
 
@@ -92,8 +81,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-=======
->>>>>>> 1a51edbabe5a7bde07147e1ee81d9a04b8888d9c
 
 
 }

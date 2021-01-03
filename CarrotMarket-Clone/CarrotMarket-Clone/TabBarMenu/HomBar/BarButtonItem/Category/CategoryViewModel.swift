@@ -10,4 +10,8 @@ import UIKit
 class CategoryViewModel {
     
     var coordinator: CategoryCoordinator?
+    
+    func didFinish() {
+        coordinator?.didFinish()
+    }
 }

@@ -14,7 +14,7 @@ class MyCarrotBarViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBarItem.selectedImage = UIImage(systemName: "person.fill")
+        
         view.backgroundColor = .green
     }
     

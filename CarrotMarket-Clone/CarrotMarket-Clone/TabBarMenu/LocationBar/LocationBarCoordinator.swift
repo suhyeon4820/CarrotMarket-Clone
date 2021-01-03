@@ -24,6 +24,7 @@ class LocationBarCoordinator: Coordinator {
         locationBarViewModel.coordinator = self
         locationBarViewController.viewModel = locationBarViewModel
         locationBarViewController.tabBarItem = UITabBarItem(title: "내 근처", image: UIImage(systemName: "location.north.line"), tag: 2)
+        locationBarViewController.tabBarItem.selectedImage = UIImage(systemName: "location.north.line.fill")
         navigationController.setViewControllers([locationBarViewController], animated: false)
         return .never()
     }

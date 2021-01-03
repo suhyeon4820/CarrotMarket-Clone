@@ -14,7 +14,7 @@ class ChattingBarViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBarItem.selectedImage = UIImage(systemName: "bubble.left.and.bubble.right.fill")
+     
         view.backgroundColor = .cyan
     }
     
